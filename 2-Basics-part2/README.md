@@ -1,5 +1,3 @@
-# Learn-JavaScript-Basics-part2
-
-This is the second part of JavaScript basics. There are simple examples for each basic concept.
+# Learn-JavaScript-Basics-part 2
 
 <img src="./img/2.png" alt="image" width="1200px">
