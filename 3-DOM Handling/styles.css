@@ -8,7 +8,7 @@
 #clrs{
      margin: 10px;
 }
-button{
+.btn{
     margin: 10px;
     height: 30px; 
     width: 80px;
@@ -27,4 +27,8 @@ button{
     border-radius: 10px;
     background-color: yellow;
 
+}
+#event-btn{
+    width: 80px;
+    height: 40px;
 }
