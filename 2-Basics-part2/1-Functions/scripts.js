@@ -1,4 +1,4 @@
-// -----Functions-----
+// Functions
 
 // A function is a reusable code segment that does a special task.
 
