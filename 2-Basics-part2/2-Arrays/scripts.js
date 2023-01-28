@@ -1,4 +1,4 @@
-// -----Arrays-----
+// Arrays
 
 // Array is a single variable that stores lists of elements
 
