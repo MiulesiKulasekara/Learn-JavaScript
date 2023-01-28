@@ -1,4 +1,4 @@
-// -----Objects-----
+// Objects
 
 /*
     In Javascript objects are variables that has many values.
