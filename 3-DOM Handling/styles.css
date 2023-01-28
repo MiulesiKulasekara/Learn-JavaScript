@@ -32,3 +32,15 @@
     width: 80px;
     height: 40px;
 }
+#event-btn1{
+    width: 110px;
+    height: 40px;
+}
+#event-btn2{
+    width: 80px;
+    height: 40px;
+    background-color: rgb(42, 182, 218);
+    border-radius: 5px;
+    border-color: rgb(42, 182, 218);
+    color: white;
+}
