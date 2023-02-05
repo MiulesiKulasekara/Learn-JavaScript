@@ -22,7 +22,7 @@ console.log(fullname);
 // console.log(text);
 
 //new
-let text = 'Hello\nworld'
+let text = "Hello\nworld";
 
 console.log(text);
 
@@ -31,10 +31,10 @@ console.log(text);
 //-----Object Destructuring-----
 
 const personalDetails = {
-    fristName : "Shamal",
-    lastName : "Aravinda",
-    city : "Colombo"
-}
+  fristName: "Shamal",
+  lastName: "Aravinda",
+  city: "Colombo",
+};
 
 //old
 // console.log(personalDetails.fristName);
@@ -42,7 +42,7 @@ const personalDetails = {
 // console.log(personalDetails.city);
 
 //new
-const {fristName: fn , lastName: ln , city: c} = personalDetails
+const { fristName: fn, lastName: ln, city: c } = personalDetails;
 console.log(fn);
 console.log(ln);
 console.log(c);
@@ -64,9 +64,9 @@ console.log(c);
 
 //new
 
-let [item1 , item2 , item3] = ["Shamal" , "Aravinda" , "Saman" , "Kumari" , "Kusum"];
+let [item1, item2, item3] = ["Shamal", "Aravinda", "Saman", "Kumari", "Kusum"];
 
-item2 = "Jenny" ;
+item2 = "Jenny";
 
 console.log(item1);
 console.log(item2);
@@ -85,13 +85,13 @@ console.log(item3);
 
 // addressMaker("Austin" , "Texas")
 
-function addressMaker(city , state){
-    const newAddress = { city ,state }//same as function parameters
+function addressMaker(city, state) {
+  const newAddress = { city, state }; //same as function parameters
 
-    console.log(newAddress)
+  console.log(newAddress);
 }
 
-addressMaker("Austin" , "Texas")
+addressMaker("Austin", "Texas");
 
 //-------------------------------------------------------------------------------------------------
 
@@ -109,20 +109,19 @@ addressMaker("Austin" , "Texas")
 
 // addressMaker({city:"Austin" , state:"Texas"});
 
-function addressMaker(address){
+function addressMaker(address) {
+  const { city, state } = address;
 
-    const { city , state } = address;
+  const newAddress = {
+    city,
+    state,
+    country: "US",
+  };
 
-    const newAddress = {
-        city ,
-        state ,
-        country:"US"
-    }
-    
-    console.log(newAddress);
+  console.log(newAddress);
 }
 
-addressMaker({city:"Austin" , state:"Texas"});
+addressMaker({ city: "Austin", state: "Texas" });
 
 //-------------------------------------------------------------------------------------------------
 
@@ -136,35 +135,53 @@ addressMaker({city:"Austin" , state:"Texas"});
 // for( let i = 0 ; i < income.length ; i++ ){
 //     console.log(income[i]);
 //     total = total + income[i];
-    
+
 // }
 
 // console.log(`My income is ${total}`);
 
-let income = [1000 , 500 , 3600 , 748]
+let income = [1000, 500, 3600, 748];
 
-let total = 0 ;
+let total = 0;
 
-let i ;
+let i;
 
-for( i of income ){
-    console.log(i);
+for (i of income) {
+  console.log(i);
 
-    total = total + i ;
+  total = total + i;
 }
 
 console.log(`My income is ${total}`);
 
-let text1 = "Shamal Aravinda"
+let text1 = "Shamal Aravinda";
 
-let j ;
+let j;
 
-for(j of text){
-    console.log(j);
+for (j of text) {
+  console.log(j);
 }
-
 
 //-------------------------------------------------------------------------------------------------
 
+//-----Spred operator-----
 
+let number = [2, 12, 10, 49, 01];
+console.log(number);
 
+let newArray = Array(...number, 3, 5, 6);
+console.log(newArray);
+
+let data = {
+  item1: "jnscn",
+  item2: "mcdnks",
+};
+
+let data1 = {
+  ...data,
+  item3: "vndkss",
+};
+
+console.log(data1);
+
+//-------------------------------------------------------------------------------------------------
