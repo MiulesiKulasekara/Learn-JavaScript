@@ -155,6 +155,15 @@ for( i of income ){
 
 console.log(`My income is ${total}`);
 
+let text1 = "Shamal Aravinda"
+
+let j ;
+
+for(j of text){
+    console.log(j);
+}
+
+
 //-------------------------------------------------------------------------------------------------
 
 
