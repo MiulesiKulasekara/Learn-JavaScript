@@ -206,41 +206,57 @@ addingNumbers(5, 4, 8);
 //-----Arrow functions-----
 
 function addNumbers(...num) {
-    console.log(num);
-  
-    //old
-    // let total = num.reduce(function (x , y){
-    //     return x + y;
-    // });
-    // console.log(`The total is : ${total}`);
-  
-    let total = num.reduce((x, y) => x + y);
-    console.log(`The total is : ${total}`);
-  }
-  
-  addNumbers(5, 4, 8, 7, 10, 17);
-  
-  // reduce()
-  
-  // executes a reducer function for array element.
-  
-  // returns a single value: the function's accumulated result.
-  
-  // method does not execute the function for empty array elements.
-  
-  // method does not change the original array.
-  
+  console.log(num);
+
+  //old
+  // let total = num.reduce(function (x , y){
+  //     return x + y;
+  // });
+  // console.log(`The total is : ${total}`);
+
+  let total = num.reduce((x, y) => x + y);
+  console.log(`The total is : ${total}`);
+}
+
+addNumbers(5, 4, 8, 7, 10, 17);
+
+// reduce()
+
+// executes a reducer function for array element.
+
+// returns a single value: the function's accumulated result.
+
+// method does not execute the function for empty array elements.
+
+// method does not change the original array.
+
 //-------------------------------------------------------------------------------------------------
 
 //-----Default Params-----
 
-function calculateBirthYear(age , currentYr = 2023){
+function calculateBirthYear(age, currentYr = 2023) {
+  let birthYr = currentYr - age;
 
-    let birthYr = currentYr - age ;
-
-    return birthYr ;
+  return birthYr;
 }
 
 console.log(`Your birth year is : ${calculateBirthYear(23)}`);
+
+//---------------------------------------------------------------------------------------------------
+
+//-----Array.includes() -----
+
+let numbersAarry = [1, 5, 9, 3, 7, 6];
+
+//old
+
+// console.log(numbersAarry.indexOf(11)); //11 does not exist in numbersAarry . Therefore it returns -1
+// console.log(numbersAarry.indexOf(7)); //7 does exist in numbersAarry . Therefore it returns 4 that is the
+// index number of 7
+
+//new
+
+console.log(numbersAarry.includes(11)); //11 does not exist in numbersAarry . Therefore it returns false
+console.log(numbersAarry.includes(7)); //7 does exist in numbersAarry . Therefore it returns false
 
 //-------------------------------------------------------------------------------------------------
