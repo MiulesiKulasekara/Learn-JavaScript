@@ -203,4 +203,31 @@ function addingNumbers(...num) {
 
 addingNumbers(5, 4, 8);
 
+//-----Arrow functions-----
+
+function addNumbers(...num) {
+    console.log(num);
+  
+    //old
+    // let total = num.reduce(function (x , y){
+    //     return x + y;
+    // });
+    // console.log(`The total is : ${total}`);
+  
+    let total = num.reduce((x, y) => x + y);
+    console.log(`The total is : ${total}`);
+  }
+  
+  addNumbers(5, 4, 8, 7, 10, 17);
+  
+  // reduce()
+  
+  // executes a reducer function for array element.
+  
+  // returns a single value: the function's accumulated result.
+  
+  // method does not execute the function for empty array elements.
+  
+  // method does not change the original array.
+  
 //-------------------------------------------------------------------------------------------------
