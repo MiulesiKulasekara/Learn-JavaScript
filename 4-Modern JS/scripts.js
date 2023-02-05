@@ -231,3 +231,16 @@ function addNumbers(...num) {
   // method does not change the original array.
   
 //-------------------------------------------------------------------------------------------------
+
+//-----Default Params-----
+
+function calculateBirthYear(age , currentYr = 2023){
+
+    let birthYr = currentYr - age ;
+
+    return birthYr ;
+}
+
+console.log(`Your birth year is : ${calculateBirthYear(23)}`);
+
+//-------------------------------------------------------------------------------------------------
