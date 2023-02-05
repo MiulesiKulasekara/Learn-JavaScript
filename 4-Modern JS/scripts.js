@@ -126,7 +126,36 @@ addressMaker({city:"Austin" , state:"Texas"});
 
 //-------------------------------------------------------------------------------------------------
 
+//-----For of loop-----
 
+//old
+// let income = [1000 , 500 , 3600 , 748]
+
+// let total = 0 ;
+
+// for( let i = 0 ; i < income.length ; i++ ){
+//     console.log(income[i]);
+//     total = total + income[i];
+    
+// }
+
+// console.log(`My income is ${total}`);
+
+let income = [1000 , 500 , 3600 , 748]
+
+let total = 0 ;
+
+let i ;
+
+for( i of income ){
+    console.log(i);
+
+    total = total + i ;
+}
+
+console.log(`My income is ${total}`);
+
+//-------------------------------------------------------------------------------------------------
 
 
 
