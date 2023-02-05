@@ -140,6 +140,7 @@ addressMaker({ city: "Austin", state: "Texas" });
 
 // console.log(`My income is ${total}`);
 
+// new
 let income = [1000, 500, 3600, 748];
 
 let total = 0;
@@ -183,5 +184,23 @@ let data1 = {
 };
 
 console.log(data1);
+
+//-------------------------------------------------------------------------------------------------
+
+//-----Rest operator-----
+
+//old
+// function addingNumbers(num){
+//     console.log(arguments);
+// }
+
+// addingNumbers(5 , 4);
+
+//new
+function addingNumbers(...num) {
+  console.log(num);
+}
+
+addingNumbers(5, 4, 8);
 
 //-------------------------------------------------------------------------------------------------
