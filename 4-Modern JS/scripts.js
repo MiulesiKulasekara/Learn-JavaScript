@@ -260,3 +260,9 @@ console.log(numbersAarry.includes(11)); //11 does not exist in numbersAarry . Th
 console.log(numbersAarry.includes(7)); //7 does exist in numbersAarry . Therefore it returns false
 
 //-------------------------------------------------------------------------------------------------
+
+//-----Let & Const -----
+ 
+// https://www.w3schools.com/js/js_variables.asp  reffer this
+
+//-------------------------------------------------------------------------------------------------
