@@ -266,3 +266,12 @@ console.log(numbersAarry.includes(7)); //7 does exist in numbersAarry . Therefor
 // https://www.w3schools.com/js/js_variables.asp  reffer this
 
 //-------------------------------------------------------------------------------------------------
+
+//-----padStart() & padEnd()-----
+
+let example = 'Miulesi';
+
+console.log(example.padStart(10,'a'));
+console.log(example.padEnd(10,'b'));
+
+//-------------------------------------------------------------------------------------------------
