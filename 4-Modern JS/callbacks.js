@@ -6,8 +6,6 @@
 
 // A callback function can run after another function has finished
 
-console.log("Init");
-
 function myFunction(number, suc, err) {
   if (number % 2 == 0) {
     suc();
@@ -25,7 +23,5 @@ myFunction(
     console.log("Odd number");
   }
 );
-
-console.log(`End`);
 
 //-------------------------------------------------------------------------------------------------
