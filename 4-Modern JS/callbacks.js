@@ -8,16 +8,14 @@
 
 console.log("Init");
 
-function myFunction(number,callback) {
+function myFunction(number, callback) {
   console.log(`The number is ${number}`);
   callback();
 }
 
-function helloFunction(){
-    console.log(`Hello!`);
-}
-
-myFunction(10,helloFunction);
+myFunction(10, () => {
+  console.log(`Hello. I am a callback function!`);
+});
 
 console.log(`End`);
 //-------------------------------------------------------------------------------------------------
