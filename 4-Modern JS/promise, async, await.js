@@ -30,8 +30,8 @@ const promise = new Promise((resolve, reject) => {
   }, 3000);
 });
 
-function doSomething() {
-  const res = promise;
+async function doSomething() {
+  const res = await promise;
   console.log(res);
 }
 
