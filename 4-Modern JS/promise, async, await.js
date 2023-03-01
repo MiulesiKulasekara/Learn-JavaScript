@@ -3,7 +3,7 @@ console.log("Start");
 const promise = new Promise((resolve, reject) => {
   setTimeout(() => {
     reject("Reject");
-  }, 0000);
+  }, 3000);
 });
 promise
   .then((sucsess) => {
