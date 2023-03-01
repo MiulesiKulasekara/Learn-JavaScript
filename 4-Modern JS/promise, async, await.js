@@ -31,8 +31,14 @@ const promise = new Promise((resolve, reject) => {
 });
 
 async function doSomething() {
-  const res = await promise;
-  console.log(res);
+  try {
+    const res = await promise;
+    console.log(res);
+    //sucsess scenario
+  } catch (e) {
+    console.log(e);
+    //error scenario
+  }
 }
 
 doSomething();
