@@ -1,4 +1,4 @@
-# Learn-JavaScript
+# Learn-JavaScript - Completed
 
 JavaScript is the <b>most popular programming language</b> in the world. This is the programming language of the web. 
 
